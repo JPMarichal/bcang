@@ -44,9 +44,14 @@ header {
             background-color: darken(blue, 20%);
           }
         }
+
+        .dropdown-menu {
+          margin-top: 5px; // Add more separation from the button
+        }
       }
 
       .search-box {
+        margin-right: 20px; // Add more separation from the user button
         position: relative;
 
         input {

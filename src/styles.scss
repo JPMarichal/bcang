@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+$primary-color: #f0e68c; // Color base
+$secondary-color: #d1c6b1; // Color secundario
+$accent-color: #a8c8e0; // Color de acento
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $primary-color;
+}
+
+header {
+    background-color: $accent-color;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: $secondary-color;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}

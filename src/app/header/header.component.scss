@@ -1,8 +1,88 @@
 @use '../../styles' as *;
 
 header {
-    background-color: $accent-color;
-    color: #333;
-    padding: 20px;
-    text-align: center;
+  background-color: $accent-color;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .site-name {
+      font-size: 1.5em;
+    }
+
+    .search-login {
+      display: flex;
+      align-items: center;
+
+      input {
+        margin-right: 10px;
+        padding: 5px;
+      }
+
+      a {
+        margin-left: 10px;
+        text-decoration: none;
+        color: #333;
+      }
+
+      .btn-group {
+        .dropdown-toggle {
+          background-color: blue; // Ensure button is blue by default
+          border: none;
+          color: white;
+
+          &:hover {
+            background-color: darken(blue, 10%);
+          }
+
+          &:active {
+            background-color: darken(blue, 20%);
+          }
+        }
+      }
+
+      .search-box {
+        position: relative;
+
+        input {
+          border-radius: 15px;
+          padding: 5px 10px;
+          padding-right: 30px;
+        }
+
+        i {
+          position: absolute;
+          right: 15px; // Updated to 5px
+          top: 50%;
+          transform: translateY(-50%);
+          color: #333;
+        }
+      }
+    }
+  }
+
+  nav {
+    margin-top: 10px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+
+      li {
+        margin: 0 15px;
+
+        a {
+          text-decoration: none;
+          color: #333;
+        }
+      }
+    }
+  }
 }

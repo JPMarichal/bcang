@@ -1,4 +1,4 @@
-@import '../../styles.scss';
+@use '../../styles' as *;
 
 header {
     background-color: $accent-color;
